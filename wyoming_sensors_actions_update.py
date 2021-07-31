@@ -1,6 +1,6 @@
 ##Keep this first part to continue logging whatever you want by appending onto the existing logfile.txt
 
-f= open("logfile.txt","a+")
+f= open("/home/pi/logs/logfile.txt","a+")
 f.write("Hello idiots")
 f.close()
 

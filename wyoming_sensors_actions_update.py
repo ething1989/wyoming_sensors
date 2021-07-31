@@ -7,7 +7,7 @@ current_date_and_time_string = str(current_date_and_time)
 
 f= open("/home/pi/logs/logfile.txt","a+")
 f.write(current_date_and_time_string)
-f.write("hello idiot")
+f.write("  hello idiot  /n")
 f.close()
 
 ##Add scripts to be run below here.

@@ -33,9 +33,9 @@ used = disk_space[3]
 
 f= open("/home/pi/logs/logfile.txt","a+")
 f.write(current_date_and_time_string)
-f.write("  all good  \r\n")
 f.write(space)
 f.write(size)
 f.write(used)
+f.write("  all good  \r\n")
 f.close()
 

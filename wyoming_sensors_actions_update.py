@@ -40,3 +40,6 @@ f.write(size)
 f.write("  all good  \r\n")
 f.close()
 
+os.rmdir("/home/pi/Desktop/data/envtl/Python_SI1145")
+os.rmdir("/home/pi/Desktop/data/envtl/Adafruit_Python_GPIO")
+

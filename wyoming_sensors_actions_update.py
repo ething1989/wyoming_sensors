@@ -28,14 +28,15 @@ current_date_and_time_string = str(current_date_and_time)
 description = getDfDescription()
 disk_root = getDf()
 space = disk_root[4]
-size = disk_space[2]
-used = disk_space[3]
+size = disk_root[2]
+used = disk_root[3]
 
 f= open("/home/pi/logs/logfile.txt","a+")
+f.write("  disk space:  \r\n")
 f.write(current_date_and_time_string)
 f.write(space)
-f.write(size)
 f.write(used)
+f.write(size)
 f.write("  all good  \r\n")
 f.close()
 

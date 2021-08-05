@@ -43,3 +43,13 @@ f.close()
 #os.rmdir("/home/pi/Desktop/data/envtl/Python_SI1145")
 #os.rmdir("/home/pi/Desktop/data/envtl/Adafruit_Python_GPIO")
 
+#g= open("/home/pi/Desktop/cleanup.sh", "a")
+#g.write('\n')
+#g.write('DATE1=$(date --date="${dataset_date} -${date_diff} 2 day" +%Y-%m-%d)')
+#g.write('\n')
+#g.write('rm -r /home/pi/Desktop/data/camera/$DATE1*')
+#g.write('\n')
+#g.write('rm -r /home/pi/Desktop/data/mic/$DATE1*')
+#g.write('\n')
+#g.close()
+

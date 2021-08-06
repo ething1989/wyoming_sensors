@@ -42,6 +42,8 @@ g.write('rm -r /home/pi/Desktop/data/envtl/weather$DAT1*')
 g.write('\n')
 g.write('rm -r /home/pi/Desktop/data/envtl/pmdata$DAT1*')
 g.write('\n')
+g.write('rclone copy /home/pi/Desktop/cleanup.sh campdavisjuara:data')
+g.write('\n')
 g.close()
 
 f= open("/home/pi/logs/logfile.txt","a+")

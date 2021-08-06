@@ -4,7 +4,6 @@
 import datetime
 import os 
 
-
 def getDfDescription():
     df = os.popen("df -h /")
     i = 0
@@ -31,14 +30,6 @@ space = disk_root[4]
 size = disk_root[2]
 used = disk_root[3]
 
-f= open("/home/pi/logs/logfile.txt","a+")
-f.write("  disk space:  \r\n")
-f.write(current_date_and_time_string)
-f.write(space)
-f.write(used)
-f.write(size)
-f.write("  all good  \r\n")
-f.close()
 
 os.rmdir("/home/pi/Desktop/data/envtl/Python_SI1145")
 os.rmdir("/home/pi/Desktop/data/envtl/Adafruit_Python_GPIO")
@@ -57,3 +48,11 @@ g.write('rm -r /home/pi/Desktop/data/envtl/pmdata$DAT1*')
 g.write('\n')
 g.close()
 
+f= open("/home/pi/logs/logfile.txt","a+")
+f.write("  disk space:  \r\n")
+f.write(current_date_and_time_string)
+f.write(space)
+f.write(used)
+f.write(size)
+f.write("  all good  \r\n")
+f.close()

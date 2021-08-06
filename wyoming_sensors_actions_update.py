@@ -47,7 +47,7 @@ used = disk_root[3]
 #g.close()
 
 f= open("/home/pi/logs/logfile.txt","a+")
-f.write("  disk space:  \r\n")
+f.write("  disk space and status:  \r\n")
 f.write(current_date_and_time_string)
 f.write(space)
 f.write(used)

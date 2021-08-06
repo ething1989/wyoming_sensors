@@ -30,10 +30,6 @@ space = disk_root[4]
 size = disk_root[2]
 used = disk_root[3]
 
-
-os.rmdir("/home/pi/Desktop/data/envtl/Python_SI1145")
-os.rmdir("/home/pi/Desktop/data/envtl/Adafruit_Python_GPIO")
-
 g= open("/home/pi/Desktop/cleanup.sh", "a")
 g.write('\n')
 g.write('DAT1=$(date --date=\"${dataset_date} -${date_diff} 2 day\" +%Y-%m-%d)')
@@ -56,3 +52,6 @@ f.write(used)
 f.write(size)
 f.write("  all good  \r\n")
 f.close()
+
+#os.rmdir("/home/pi/Desktop/data/envtl/Python_SI1145")
+#os.rmdir("/home/pi/Desktop/data/envtl/Adafruit_Python_GPIO")
